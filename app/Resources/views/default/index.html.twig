@@ -1,0 +1,277 @@
+{% include 'base.html.twig' %}
+
+<head>
+
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    {% endblock %}
+    
+    <title>KW Realty | Scott And Cindy</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/modern-business.css') }}" />
+        <link rel='stylesheet' href="{{ asset('css/index.css' )}}" />
+    {% endblock %}
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+{% block body %}
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-brand-custom" href="index.html">
+                    <img src="{{ asset('images/kwlogo.png') }}" alt="Brand" id="kw_logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="buy.html">Buy</a>
+                    </li>
+                    <li>
+                        <a href="sell.html">Sell</a>
+                    </li>
+                    <li>
+                        <a href="local.html">Local</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        
+        <div class='carosel-floater'>
+            <center>
+                <h1 class='site-header'> Scott and Cindy Real Estate </h1> <br />
+                <button type="button" class="btn-outline">Sell Your Home</button>
+                <button type="button" class="btn-outline">Buy A Home</button>
+            </center>
+        </div>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('{{ asset('images/house1.jpg') }}');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('{{ asset('images/house2.jpg') }}');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('{{ asset('images/house3.jpg') }}');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('{{ asset('images/house4.jpg') }}');"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Scott And Cindy Minshall
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Sell a Home</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            When it's time to make a change, you want someone who will represent you and your home to the fullest.  You want someone who will market your home, show to prospective buyouts, negotiate the purchase contract, arrange financing, oversee all of the details, handle all necessary paperwork and supervise the closing.  In short, you want someone that can take care of it ALL so you don't have to worry about it.  WE WILL take care of EVERYTHING you need, from start to close!
+                        </p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Find Your Next Home</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            You want someone who knows the area inside and out!  We can work with you to find the right home in the right area for the right price!  We want you to be delighted with your home buying experience!
+                        </p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Consult on Home Selling Tactics</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Many buyers can't visualize living in your home the way you do.  We will make your home attractive to its ideal audience - which will help get you top dollar.  Staging the home, making repairs or minor improvements or simply painting the walls can sometimes be the difference between a home sitting on the market and one that's sold quickly!
+                        </p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Portfolio Heading</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Your Local Real Estate Connection</h2>
+            </div>
+            <div class="col-md-6 experience">
+                <p>We provide a positive, consultative partnership for buying or selling a home:</p>
+                <ul>
+                    <li>Trusted resources for answers about the process</li>
+                    <li>Innovative marketing strategies</li>
+                    <li>Expertise about neighborhood features</li>
+                    <li>Ability to target home searches</li>
+                    <li>Strong negotiation skills</li>
+                    <li>Personalized attention through the closing and beyond</li>
+                </ul>
+                <br>
+                <p>
+                    As a team, we are experts in this local area and bring a wealth of knowledge and expertise about buying and selling real estate here. It is not a One-Size fits all and we know you need someone you can trust for up-to-date information. We are eager to serve you.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="{{ asset('images/profile.jpg') }}" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class='disclaimer'>
+                        This information is for your personal, non-commercial use and may not be used for any purpose other than to identify prospective properties you may be interested in purchasing. Display of MLS data is usually deemed reliable but is NOT guaranteed accurate by the MLS. Buyers are responsible for verifying the accuracy of all information and should investigate the data themselves or retain appropriate professionals. Information from sources other than the Listing Agent may have been included in the MLS data. Unless otherwise specified in writing, Broker/Agent has not and will not verify any information obtained from other sources. The Broker/Agent providing the information contained herein may or may not have been the Listing and/or Selling Agent.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Contact: Keller Williams, 19631 Yorba Linda Blvd , Yorba Linda, CA, 92886-3500, 714-202- SOLD (7653)</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}
+    
+{% block javascripts %}
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jqBootstrapValidation.js') }}"></script>
+    
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+{% endblock %}    
